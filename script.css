@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=STIX+Two+Math&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200&family=Rampart+One&family=STIX+Two+Math&display=swap');
+body{
+    background-color: #f0efeb;
+}
+.navbar
+{
+    background-color: black !important;
+}
+.nav-link
+{
+    color: white !important;
+    font-weight: 800;
+    transition: all .3s;
+}
+.nav-link:hover{
+    color: #00b4d8 !important;
+}
+.img
+{
+    height: 30rem !important;
+    overflow: hidden;
+    position: relative;
+}
+.text
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background: rgba(0, 0, 0, 0.8);
+}
+.fas
+{   transition: transform .8s;
+    animation: anime 1s linear infinite;
+}
+@keyframes anime {
+    to{transform: rotateY(0deg);}
+    from{transform: rotateY(180deg);}
+}
+.text h3{
+    position: absolute;
+    bottom: 6%;
+    right: 10%;
+    font-family: 'STIX Two Math', serif;
+    line-height: 50px;
+    font-size: 40px;
+}
+.loser
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 10rem !important;
+    height: 10rem !important; 
+}
+.box
+{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.box h1{
+    font-weight: 700 !important;
+    font-size: 100px !important;
+}
+.footer-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

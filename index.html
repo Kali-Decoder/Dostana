@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class="fas fa-heart fa-2x" style="color: red;"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+         
+          </ul>
+        </div>
+    </nav>
+  <div class="row" style="overflow: hidden;">
+    <div class="col-md-12 col-12 mx-auto img">
+        <section >
+            <img src="bf2.jpg" style="width: 100%; object-fit: cover;" alt="">
+            <div class="text">
+                    <h3 class="text-white">
+                        A Friend in <span class="text-danger">Need</span>, <br> is a Friend <span class="text-danger">Indeed</span>
+                    </h3>
+                
+            </div>
+        </section>
+    </div>
+  </div>
+  <div class="row mt-0">
+    <div class="col-md-12 col-12 mx-auto" style="border: 5px solid black;">
+        <img src="bf6.jpg" alt="" style="width: 100%; object-fit: cover;">
+    </div>
+</div>
+  <div class="row mt-1">
+      <div class="col-md-6 col-12 mx-auto">
+            <p class="text-center" style="background: #cbf3f0; padding: 40px; border-radius: 10px;">
+                आसमान से तोड़ कर सितारा दिया है, <br>
+                आलम-ए-तन्हाई में एक शरारा दिया है,<br>
+                मेरी किस्मत भी नाज़ करती है मुझपे, <br>
+                खुदा ने दोस्त ही इतना प्यारा दिया है। ❣️
+            </p>
+      </div>
+      <div class="col-md-6 col-12 mx-auto">
+        <p class="text-center" style="background: #cbf3f0; padding: 40px; border-radius: 10px;">
+            Dost ka pyar dua se kam nahi hota, <br> Dost door ho to bhi gum nahi hota, <br> Pyar mein aksar dosti kam ho jati hai, <br> Par dosti mein kabhi pyar kam ❣️
+        </p>
+  </div>
+ <div class="container">
+    <div class="row mt-1">
+        <div class="col-md-6 col-12 mx-auto">
+            <label for="" class="form-label text-info"><strong>Name:</strong></label>
+            <input type="text" name="" placeholder="Enter Name Of First Person" id="first" class="form-control">
+        </div>
+        <div class="col-md-6 col-12 mx-auto">
+          <label for="" class="form-label text-info"><strong>Name:</strong></label>
+          <input type="text" name="" placeholder="Enter Name Of Second Person" id="second" class="form-control">
+      </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-12">
+            <button class="btn-dark" style="padding: 6px 20px;"><Strong>Dostana</Strong></button>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-8 col-12 mx-auto">
+            <div class="box">
+                <h1 class="result"></h1>
+            </div>
+        </div>
+    </div>
+    <div class="row row-sm-1 mt-3">
+        <div class="col-md-2  col-6 mx-auto loser">
+            <h1 style="font-family: 'Rampart One', cursive; color: red;">L</h1>
+            <p class="text-white"><strong>Legions</strong></p>
+        </div>
+        <div class="col-md-2 col-6 mx-auto loser">
+            <h1 style="font-family: 'Rampart One', cursive; color: green;">O</h1>
+            <p class="text-white"><strong>Of</strong></p>
+        </div>
+        <div class="col-md-2 col-6 mx-auto loser">
+            <h1 style="font-family: 'Rampart One', cursive; color: blue;">S</h1>
+            <p class="text-white"><strong>Self-Deluded</strong></p>
+        </div>
+        <div class="col-md-2 col-6 mx-auto loser">
+            <h1 style="font-family: 'Rampart One', cursive; color: aqua;">E</h1>
+            <p class="text-white"><strong>Elitist</strong></p>
+        </div>
+        <div class="col-md-2 col-6 mx-auto loser">
+            <h1 style="font-family: 'Rampart One', cursive; color: white;">R</h1>
+            <p class="text-white"><strong>Retards</strong></p>
+        </div>
+        <div class="col-md-2 col-6 mx-auto loser">
+            <h1 style="font-family: 'Rampart One', cursive; color: yellow;">S</h1>
+            <p class="text-white"><strong>& Shine</strong></p>
+        </div>
+    </div>
+    
+    <hr>
+    <footer>
+        <div class="row mt-3">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="footer-text">
+                    <h1 class="text-center" style="font-family: 'Martel', serif;">Thankyou For Visiting ! ❣️</h1>
+                    <h3 class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif;">Neeraj Choubisa</h3>
+                    <h4 class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif;">neerajchoubisa876@gmail.com</h4>
+                    <h5 class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif;">Follow <span class="text-danger">Tech Op</span> On Instagram</h5>
+                    <h6 class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif;">Your Kali-Decoder❣️</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+ </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
